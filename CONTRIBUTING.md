@@ -1,6 +1,6 @@
-# Contribute to Azure documentation
+# Contribute to Office developer documentation
 
-Thank you for your interest in Azure documentation!
+Thank you for your interest in Office developer documentation!
 
 * [Ways to contribute](#ways-to-contribute)
 * [Before we can accept your pull request](#before-we-can-accept-your-pull-request)
@@ -12,17 +12,17 @@ Thank you for your interest in Azure documentation!
 
 ## Ways to contribute
 
-You can contribute to [Azure documentation](http://azure.microsoft.com/en-us/documentation/) in a few different ways:
+You can contribute to [Office developer documentation](http://msdn.microsoft.com/en-us/library/office/dn467914(v=office.15).aspx) in a few different ways:
 
-* Contribute to a [forum discussion](http://social.msdn.microsoft.com/Forums/windowsazure/en-US/home).
-* Submit Disqus comments at the bottom of articles.
-* Contribute to articles via the public Azure repo.
+* Contribute to articles via the [public Azure repo](https://github.com/OfficeDev/office-content)
+* Report documentation bugs via [GitHub Issues](https://github.com/OfficeDev/office-content/issues)
+* Add documentation requests to the [Office/SharePoint developer UserVoice](http://officespdev.uservoice.com)
 
 ##Before we can accept your pull request
 
 ###Minor corrections
 
-Minor corrections or clarifications you submit for documentation and code examples in this repo are covered by the [Azure Website Terms of Use (ToU)](http://azure.microsoft.com/en-us/support/legal/website-terms-of-use/). 
+Minor corrections or clarifications you submit for documentation and code examples in this repository do not require a Contribution License Agreement (CLA). Submissions are taken in the form of pull requests. We will do our best to review pull requests within ten business days.
 
 
 ###Larger submissions
@@ -32,25 +32,19 @@ If you submit new or significant changes to documentation and code examples, you
 * Members of the Microsoft Open Technologies group.
 * Contributors who don't work for Microsoft.
 
-Full details are available at [http://azure.github.io/guidelines.html#cla](http://azure.github.io/guidelines.html#cla). Please email a copy of the signed CLA to [cla@microsoft.com](mailto:cla@microsoft.com).
+As a community member, **you must sign the Contribution License Agreement (CLA) before you can contribute large submissions to this project**, but you only need complete and submit the documentation once. Please carefully review the document; you may also need to have your employer sign the document.
+
+Signing the Contribution License Agreement (CLA) does not grant you rights to commit to the main repository, but it does mean that the Office Developer and Content Publishing teams will be able to review and consider your contributions and you will get credit if we do.
+
+You can download the Contribution License Agreement (CLA) here. Please fill out the form and email it to [officedev@microsoft.com](mailto:officedev@microsoft.com).
+
+Once we receive and process your CLA, we will do our best to review your pull request(s) within ten business days.
 
 ## Repository organization
 
-The content in the azure-content repository follows the organization of documentation on [Azure.Microsoft.com](http://azure.microsoft.com). This repository contains two root folders: 
+The content in the office-content repository is grouped first by article language, then by topic. The README.md file at the root of each topic directory specifies the structure of the articles within the topic.
 
-### \articles 
-
-The *\articles* folder contains the documentation articles formatted as markdown files with an *.md* extension. Articles are published to Azure.Microsoft.com in the path *http://azure.microsoft.com/en-us/documentation/articles/{article-name-without-md}/*. 
-
-* **Article filenames:** Begin with the service name, such as *hdinsight*, and include the development language and a description of the subject matter. Use all lowercase letters and dashes (-) to separate the words. 
-
-* **Media subfolders:** The *\articles* folder contains the *\media* folder, inside which are subfolders with the images for each article. The article image folders are named identically to the article file, minus the *.md* file extension.
-
-### \includes
-
-Content authors can create reusable content sections to be included into one or more articles. An include file is simple markdown (.md) file that can contain any valid markdown content including text, links, and images. All include markdown files must contained in the *\includes* directory in the root of this repository. 
-
-* **Media subfolders:** The *\includes* folder contains a *\media* folder, inside which are folders for the images in each include. The includes image folders are named identically to the include file, minus the *.md* file extension. 
+Article within each topic are named by MSDN GUID rather than title name. This is a side effect of our document management process and cannot be changed at this time. We highly recommend using the table of contents within each topic directory to navigate to the files you wish to view or edit. For more information, please refer to [README.md](https://github.com/OfficeDev/office-content/blob/master/README.md).
 
 ## Use GitHub, Git, and this repository
 
@@ -63,12 +57,12 @@ Content authors can create reusable content sections to be included into one or 
 3.	Now that machine is set up with Git, you need a fork of this repository. Go to the top of the page and click the **Fork** button. You now have your own fork of this repository.
 4.	The last step involves copying your fork to your local machine. To do this go open GitBash. On the command prompt enter:
 
-		git clone https://github.com/<your user name>/azure-content.git
+		git clone https://github.com/<your user name>/office-content.git
 
 	Next create a reference to the root repository by entering these commands:
 
 		cd azure-content
-		git remote add upstream https://github.com/Azure/azure-content.git
+		git remote add upstream https://github.com/OfficeDev/office-content.git
 		git fetch upstream
 
 Congratulations you have now set up your repository.  The above steps will not need to be repeated again.
@@ -97,11 +91,11 @@ Each branch should be limited to a single concept/article both to streamline wor
 
 #### Add new content or edit existing content
 
-You can now navigate to the repository on your local machine using Windows Explorer. The repository files are in `C:\Users\<yourusername>\azure-content`.
+You can now navigate to the repository on your local machine using Windows Explorer. The repository files are in `C:\Users\<yourusername>\office-content`.
 
 If you are editing files, open them in an editor of your choice and start modifying them.  If you want to create a new file, use the editor of your choice and save the new file in the appropriate location in your local copy of the repository.  While working, make sure to save your work frequently.
 
-The files in `C:\Users\<yourusername>\azure-content` are a working copy of the new branch that you created in your local repository. Changing anything in this folder does not affect the local repository until you commit a change. To commit a change to the local repository, type the following commands in GitBash:
+The files in `C:\Users\<yourusername>\office-content` are a working copy of the new branch that you created in your local repository. Changing anything in this folder does not affect the local repository until you commit a change. To commit a change to the local repository, type the following commands in GitBash:
 
 	git add .
 	git commit -v -a -m "<Describe the changes made in this commit>"
@@ -119,18 +113,18 @@ When you are done with your work and are ready to have it merged into the centra
 1.	In GitBash type `git push origin <new branch name>` in the command prompt.  In your local repository, `origin` refers to your GitHub repository that you cloned the local repository from. This command pushes the current state of your new branch, including all commits made in the previous steps, to your GitHub fork.
 2.	On the GitHub site, navigate in your fork to the new branch.
 3.	Click the **Pull Request** button at the top of the page.
-4.	Ensure that the Base branch is `Azure/azure-content@master` and the Head branch is `<your username>/azure-content@<branch name>`
+4.	Ensure that the Base branch is `OfficeDev/office-content@master` and the Head branch is `<your username>/office-content@<branch name>`
 5.	Click the **Update Commit Range** button.
-6.	Give your pull request a Title, and describe all the changes being made.  If your bug fixes a TFS Item or GitHub issue make sure to reference them in the description.
+6.	Give your pull request a Title, and describe all the changes being made.  If your bug fixes a UserVoice item or GitHub issue make sure to reference them in the description.
 7.	Submit the Pull Request.
 
-One of the site administrators will now process your pull request.  Your pull request will surface on the Azure/azure-content site under Issues.  When the Pull Request is accepted, the issue will be resolved.
+One of the site administrators will now process your pull request.  Your pull request will surface on the OfficeDev/office-content site under Issues.  When the Pull Request is accepted, the issue will be resolved.
 
 #### Create a new branch after merge
 
 After a branch has been successfully merged (i.e. your pull request has been accepted), do not continue working in the local branch that was successfully merged upstream. This can lead to merge conflicts if you submit another pull request. Instead, if you want to do another update, create a new local branch from the successfully merged upstream branch.
 
-For example, suppose your local branch X was successfully merged into the Azure/azure-content master branch and you want to make further updates to the content that was merged. Create a new local branch, X2, from the Azure/Azure-Content master branch. To do this, open GitBash and execute the following commands:
+For example, suppose your local branch X was successfully merged into the OfficeDev/office-content master branch and you want to make further updates to the content that was merged. Create a new local branch, X2, from the OfficeDev/Office-Content master branch. To do this, open GitBash and execute the following commands:
 
 	cd azure-content
 	git pull upstream master:X2
@@ -152,44 +146,14 @@ Once your changes have been successfully merged into the central repository you 
 
 Congratulations, you have successfully contributed to the project.
 
-## How to use markdown to format your topic
+## How to format your topics
 
 ### Article template
 
-The [markdown template](/articles/0-markdown-template-for-new-articles.md) contains the basic markdown for a topic that includes a TOC, sections with subheadings, links to other azure.microsoft.com topics, links to other sites, bold text, italic text, numbered and bulleted lists, code snippets, and images. For fancier markdown, see the following sections, or find a published topic and copy the markdown or HTML you want.
-
-### *include* files
-
-Includes are used for adding reusable chunks of content.
-
-Use the following syntax to reference an include file in your article:
-
-	[WACOM.INCLUDE [include-short-name](../includes/include-file-name.md)]
-	
-
-**Note:** An include file cannot reference other includes. 
-
-### Note syntax
-
-If you want to add a Note section to your article, use the following:
-
-  	> [WACOM.NOTE] Note content here. 
-  	> Use a caret for each new paragraph in the note.
+The [markdown template](/articles/0-markdown-template-for-new-articles.md) contains the basic markdown for a topic that includes a TOC, sections with subheadings, links to other Office developer topics, links to other sites, bold text, italic text, numbered and bulleted lists, code snippets, and images. 
 
 
-### Videos in articles
-
-You can add [Channel 9](http://channel9.msdn.com/) videos to articles with the following syntax:
- 
-    > [WACOM.VIDEO video-id-string]
-    
-
-1. Make sure that the video is on the [Azure Video Center](http://azure.microsoft.com/en-us/documentation/videos/home/). 
-2. Copy the video ID from the friendly URL of the video on the video gallery. For example, the video ID of *http://azure.microsoft.com/en-us/documentation/videos/azure-scheduler-unusual-schedules/* will be the friendly URL *azure-scheduler-unusual-schedules*.
-3. Use the extension syntax above with *video-id-string* as the friendly URL of the video.
-
-
-## Standard Markdown
+### Standard Markdown
 
 All of the articles in this repository use Markdown.  While a complete introduction (and listing of all the syntax) can be found here [Markdown Home] [], the relevant basics will be covered here.
 
