@@ -814,7 +814,7 @@ A Comment Authors part shall not have implicit or explicit relationships to any 
 
 
 ## The Structure of a Minimum Presentation File
-Now that you are familiar with the parts of a PresentationML document, consider how some of these parts are implemented and connected in an actual presentation file. As shown in the article  [How to: Create a presentation document by providing a file name (Open XML SDK)](https://github.com/jhershey00/OpenXMLTest/blob/master/articles/3d4a800e-64f0-4715-919f-a8f7d92a5c37.md), you can use the Open XML API to build up a minimum presentation file, part by part. 
+Now that you are familiar with the parts of a PresentationML document, consider how some of these parts are implemented and connected in an actual presentation file. As shown in the article  [How to: Create a presentation document by providing a file name (Open XML SDK)](3d4a800e-64f0-4715-919f-a8f7d92a5c37.md), you can use the Open XML API to build up a minimum presentation file, part by part. 
 
 A minimum presentation file consists of a presentation part, represented by the file presentation.xml, as well as a presentation properties part (presProps.xml), a slide master part (slideMaster.xml), a slide layout part (slideLayout.xml), and a theme part (theme.xml). One or more slide parts (slide.xml) are optional.
 
@@ -838,7 +838,7 @@ Figure 1 shows the structure under the  **ppt** folder of the .zip package for a
 ![Minimum presentation folder structure]
 (images/odc_oxml_ppt_documentstructure_fig01.jpg)
 
-The presentation.xml file contains <sld> (Slide) elements that reference the slides in the presentation. Each slide is associated to the presentation by means of a slide ID and a relationship ID. The  **slideID** is the identifier (ID) used within the package to identify a slide and must be unique within the presentation. The **id** attribute is the relationship ID that identifies the slide part definition associated with a slide. For more information about the slide part, see [Working with presentation slides (Open XML SDK)](https://github.com/jhershey00/OpenXMLTest/blob/master/articles/ee6c905b-26c5-4aed-a414-9aa826364a23.md).
+The presentation.xml file contains <sld> (Slide) elements that reference the slides in the presentation. Each slide is associated to the presentation by means of a slide ID and a relationship ID. The  **slideID** is the identifier (ID) used within the package to identify a slide and must be unique within the presentation. The **id** attribute is the relationship ID that identifies the slide part definition associated with a slide. For more information about the slide part, see [Working with presentation slides (Open XML SDK)](ee6c905b-26c5-4aed-a414-9aa826364a23.md).
 
 The following XML code is the PresentationML that represents the presentation part of a presentation document that contains a single slide. This code is generated when you run the Open XML SDK 2.5 code to create a minimum presentation
 
@@ -960,12 +960,12 @@ Figure 2 shows most of the elements that you would find in a typical presentatio
 #### Concepts
 
 
- [How to: Create a presentation document by providing a file name (Open XML SDK)](https://github.com/jhershey00/OpenXMLTest/blob/master/articles/3d4a800e-64f0-4715-919f-a8f7d92a5c37.md)
+ [How to: Create a presentation document by providing a file name (Open XML SDK)](3d4a800e-64f0-4715-919f-a8f7d92a5c37.md)
 
- [Working with presentations (Open XML SDK)](https://github.com/jhershey00/OpenXMLTest/blob/master/articles/82deb499-7479-474d-9d89-c4847e6f3649.md)
+ [Working with presentations (Open XML SDK)](82deb499-7479-474d-9d89-c4847e6f3649.md)
 
- [Working with presentation slides (Open XML SDK)](https://github.com/jhershey00/OpenXMLTest/blob/master/articles/ee6c905b-26c5-4aed-a414-9aa826364a23.md)
+ [Working with presentation slides (Open XML SDK)](ee6c905b-26c5-4aed-a414-9aa826364a23.md)
 
- [Working with slide masters (Open XML SDK)](https://github.com/jhershey00/OpenXMLTest/blob/master/articles/7dfd78a3-e233-4abd-8c17-1e384780d3ec.md)
+ [Working with slide masters (Open XML SDK)](7dfd78a3-e233-4abd-8c17-1e384780d3ec.md)
 
- [Working with slide layouts (Open XML SDK)](https://github.com/jhershey00/OpenXMLTest/blob/master/articles/1ec087c3-8b9e-46a9-9c3c-14586908eb0e.md)
+ [Working with slide layouts (Open XML SDK)](1ec087c3-8b9e-46a9-9c3c-14586908eb0e.md)
