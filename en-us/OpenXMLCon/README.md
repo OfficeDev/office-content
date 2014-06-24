@@ -105,4 +105,4 @@
       - [How to: Set a custom property in a word processing document](articles/30dfce05-00c1-423e-b4b4-149329fdf184.md)
       - [How to: Set the font for a text run](articles/e4e5a2e5-a97e-47b9-a263-6723bd4230a1.md)
       - [How to: Validate a word processing document](articles/a20bf30b-204e-4c57-8ca3-badf4b0b3e03.md)
-  - [Class library reference](articles/dabc2fad-9ef8-4aee-9d77-ebec147b0e24.md)
+  - [Class library reference on MSDN](http://msdn.microsoft.com/en-us/library/office/gg278315(v=office.15).aspx)
