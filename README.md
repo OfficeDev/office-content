@@ -1,33 +1,26 @@
 # README
 
-Thank you for your interest in [Azure.Microsoft.com](http://azure.microsoft.com) documentation!
+Thank you for your interest in Office developer documentation!
 
 ## Ways to contribute
 
-You can contribute to [Azure documentation](http://azure.microsoft.com/en-us/documentation/) in a few different ways:
+You can contribute to [Office developer documentation](http://msdn.microsoft.com/en-us/library/office/dn467914(v=office.15).aspx) in a few different ways:
 
-* Contribute to a [forum discussion](http://social.msdn.microsoft.com/Forums/windowsazure/en-US/home).
-* Submit Disqus comments at the bottom of articles.
-* Contribute to articles via the public Azure repo.
+* Contribute to articles via the [public Azure repo](https://github.com/OfficeDev/office-content)
+* Report documentation bugs via [GitHub Issues](https://github.com/OfficeDev/office-content/issues)
+* Add documentation requests to the [Office/SharePoint developer UserVoice](http://officespdev.uservoice.com)
 
 ## Repository organization
 
-The content in the azure-content repository follows the organization of documentation on [Azure.Microsoft.com](http://azure.microsoft.com). This repository contains two root folders: 
+The content in the office-content repository is grouped first by article language, then by topic. The README.md file at the root of each topic directory specifies the structure of the articles within the topic.
 
-### \articles 
+Article within each topic are named by MSDN GUID rather than title name. This is a side effect of our document management process and cannot be changed at this time. We highly recommend using the table of contents within each topic directory (see links below) to navigate to the files you wish to view or edit.
 
-The *\articles* folder contains the documentation articles formatted as markdown files with an *.md* extension. Articles are published to Azure.Microsoft.com in the path *http://azure.microsoft.com/en-us/documentation/articles/{article-name-without-md}/*. 
+##Articles in this repository
+###Open XML
 
-* **Article filenames:** Begin with the service name, such as *hdinsight*, and include the development language and a description of the subject matter. Use all lowercase letters and dashes (-) to separate the words. 
+- [Open XML Conceptual Content \[en-us\]](https://github.com/OfficeDev/office-content/tree/master/en-us/OpenXMLCon)
 
-* **Media subfolders:** The *\articles* folder contains the *\media* folder, inside which are subfolders with the images for each article. The article image folders are named identically to the article file, minus the *.md* file extension.
-
-### \includes
-
-Content authors can create reusable content sections to be included into one or more articles. An include file is simple markdown (.md) file that can contain any valid markdown content including text, links, and images. All include markdown files must be contained in the *\includes* directory in the root of this repository. 
-
-* **Media subfolders:** The *\includes* folder contains a *\media* folder, inside which are folders for the images in each include. The includes image folders are named identically to the include file, minus the *.md* file extension.
-
-## More guidance for contributors
-For more guidance on contributing to articles on [Azure.Microsoft.com](http://azure.microsoft.com), see [CONTRIBUTING.md](https://github.com/WindowsAzure/azure-content/blob/master/CONTRIBUTING.md) in this repo. 
+## Guidance for contributors
+For more guidance on contributing to Office developer documentation, see [CONTRIBUTING.md](https://github.com/OfficeDev/office-content/blob/master/CONTRIBUTING.md) in this repo. 
 
