@@ -6,7 +6,7 @@ Thank you for your interest in Office developer documentation!
 
 You can contribute to [Office developer documentation](http://msdn.microsoft.com/en-us/library/office/dn467914(v=office.15).aspx) in a few different ways:
 
-* Contribute to articles via the [public Azure repo](https://github.com/OfficeDev/office-content)
+* Contribute to articles via the [public Office developer docs repo](https://github.com/OfficeDev/office-content)
 * Report documentation bugs via [GitHub Issues](https://github.com/OfficeDev/office-content/issues)
 * Add documentation requests to the [Office/SharePoint developer UserVoice](http://officespdev.uservoice.com)
 
