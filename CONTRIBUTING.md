@@ -14,7 +14,7 @@ Thank you for your interest in Office developer documentation!
 
 You can contribute to [Office developer documentation](http://msdn.microsoft.com/en-us/library/office/dn467914(v=office.15).aspx) in a few different ways:
 
-* Contribute to articles via the [public Azure repo](https://github.com/OfficeDev/office-content)
+* Contribute to articles via the [public Office developer docs repo](https://github.com/OfficeDev/office-content)
 * Report documentation bugs via [GitHub Issues](https://github.com/OfficeDev/office-content/issues)
 * Add documentation requests to the [Office/SharePoint developer UserVoice](http://officespdev.uservoice.com)
 
@@ -34,9 +34,9 @@ If you submit new or significant changes to documentation and code examples, you
 
 As a community member, **you must sign the Contribution License Agreement (CLA) before you can contribute large submissions to this project**, but you only need complete and submit the documentation once. Please carefully review the document; you may also need to have your employer sign the document.
 
-Signing the Contribution License Agreement (CLA) does not grant you rights to commit to the main repository, but it does mean that the Office Developer and Content Publishing teams will be able to review and consider your contributions and you will get credit if we do.
+Signing the Contribution License Agreement (CLA) does not grant you rights to commit to the main repository, but it does mean that the Office Developer and Office Developer Content Publishing teams will be able to review and consider your contributions and you will get credit if we do.
 
-You can download the Contribution License Agreement (CLA) here. Please fill out the form and email it to [officedev@microsoft.com](mailto:officedev@microsoft.com).
+You can download the Contribution License Agreement (CLA) [here](https://github.com/OfficeDev/office-content/raw/master/Contribution%20License%20Agreement.pdf). Please fill out the form and email it to [officedev@microsoft.com](mailto:officedev@microsoft.com).
 
 Once we receive and process your CLA, we will do our best to review your pull request(s) within ten business days.
 
@@ -61,7 +61,7 @@ Article within each topic are named by MSDN GUID rather than title name. This is
 
 	Next create a reference to the root repository by entering these commands:
 
-		cd azure-content
+		cd office-content
 		git remote add upstream https://github.com/OfficeDev/office-content.git
 		git fetch upstream
 

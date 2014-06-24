@@ -39,7 +39,7 @@ As a community member, **you must sign the Contribution License Agreement (CLA) 
 
 Signing the Contribution License Agreement (CLA) does not grant you rights to commit to the main repository, but it does mean that the Office Developer and Content Publishing teams will be able to review and consider your contributions and you will get credit if we do.
 
-You can download the Contribution License Agreement (CLA) here. Please fill out the form and email it to [officedev@microsoft.com](mailto:officedev@microsoft.com).
+You can download the Contribution License Agreement (CLA) [here](https://github.com/OfficeDev/office-content/raw/master/Contribution%20License%20Agreement.pdf). Please fill out the form and email it to [officedev@microsoft.com](mailto:officedev@microsoft.com).
 
 Once we receive and process your CLA, we will do our best to review your pull request(s) within ten business days.
 
