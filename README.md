@@ -10,7 +10,7 @@ You can contribute to [Office developer documentation](http://msdn.microsoft.com
 * Report documentation bugs via [GitHub Issues](https://github.com/OfficeDev/office-content/issues)
 * Add documentation requests to the [Office/SharePoint developer UserVoice](http://officespdev.uservoice.com)
 
-*\*We're only taking requests for the OpenXML Conceptual content at this time\**
+*\*We're only taking requests for the OpenXML Conceptual content at this time\*
 
 ## Repository organization
 
