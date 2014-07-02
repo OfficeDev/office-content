@@ -33,7 +33,7 @@ using Drawing = DocumentFormat.OpenXml.Drawing;
 
 
 
-```VisualBasic
+```VB.net
 Imports System.Linq
 Imports DocumentFormat.OpenXml.Presentation
 Imports DocumentFormat.OpenXml.Packaging
@@ -62,7 +62,7 @@ using (PresentationDocument doc = PresentationDocument.Open(file, true))
 
 
 
-```VisualBasic
+```VB.net
 Using doc As PresentationDocument = PresentationDocument.Open(file, True)
     ' Insert other code here.
 End Using
@@ -231,7 +231,7 @@ public static void MoveParagraphToPresentation(string sourceFile, string targetF
 
 
 
-```VisualBasic
+```VB.net
 ' Moves a paragraph range in a TextBody shape in the source document
 ' to another TextBody shape in the target document.
 Public Shared Sub MoveParagraphToPresentation(ByVal sourceFile As String, ByVal targetFile As String)
@@ -301,7 +301,7 @@ public static SlidePart GetFirstSlide(PresentationDocument presentationDocument)
 
 
 
-```VisualBasic
+```VB.net
 ' Get the slide part of the first slide in the presentation document.
 Public Shared Function GetFirstSlide(ByVal presentationDocument As PresentationDocument) As SlidePart
     ' Get relationship ID of the first slide
@@ -337,7 +337,7 @@ MoveParagraphToPresentation(sourceFile, targetFile);
 
 
 
-```VisualBasic
+```VB.net
 Dim sourceFile As String = "C:\Users\Public\Documents\Myppt4.pptx"
 Dim targetFile As String = "C:\Users\Public\Documents\Myppt12.pptx"
 MoveParagraphToPresentation(sourceFile, targetFile)
@@ -416,7 +416,7 @@ public static SlidePart GetFirstSlide(PresentationDocument presentationDocument)
 
 
 
-```VisualBasic
+```VB.net
 ' Moves a paragraph range in a TextBody shape in the source document
 ' to another TextBody shape in the target document.
 Public Sub MoveParagraphToPresentation(ByVal sourceFile As String, ByVal targetFile As String)

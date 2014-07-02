@@ -45,7 +45,7 @@ using DocumentFormat.OpenXml.Spreadsheet;
 
 
 
-```VisualBasic
+```VB.net
 Imports System.IO
 Imports DocumentFormat.OpenXml.Packaging
 Imports DocumentFormat.OpenXml.Spreadsheet
@@ -81,7 +81,7 @@ public static List<uint> GetHiddenRowsOrCols(
 
 
 
-```VisualBasic
+```VB.net
 Public Function GetHiddenRowsOrCols(
   ByVal fileName As String, ByVal sheetName As String,
   ByVal detectRows As Boolean) As List(Of UInteger)
@@ -110,7 +110,7 @@ Console.WriteLine(sw.ToString());
 
 
 
-```VisualBasic
+```VB.net
 Const fileName As String = "C:\Users\Public\Documents\RetrieveHiddenRowsCols.xlsx"
 Dim items As List(Of UInteger) =
     GetHiddenRowsOrCols(fileName, "Sheet1", True)
@@ -139,7 +139,7 @@ List<uint> itemList = new List<uint>();
 
 
 
-```VisualBasic
+```VB.net
 Dim itemList As New List(Of UInteger)
 ```
 
@@ -160,7 +160,7 @@ using (SpreadsheetDocument document =
 
 
 
-```VisualBasic
+```VB.net
 Using document As SpreadsheetDocument =
     SpreadsheetDocument.Open(fileName, False)
 
@@ -187,7 +187,7 @@ if (theSheet == null)
 
 
 
-```VisualBasic
+```VB.net
 Dim theSheet As Sheet = wbPart.Workbook.Descendants(Of Sheet)().
     Where(Function(s) s.Name = sheetName).FirstOrDefault()
 If theSheet Is Nothing Then
@@ -214,7 +214,7 @@ else
 
 
 
-```VisualBasic
+```VB.net
 Else
     ' The sheet does exist.
     Dim wsPart As WorksheetPart =
@@ -252,7 +252,7 @@ else
 
 
 
-```VisualBasic
+```VB.net
 If detectRows Then
     ' Retrieve hidden rows.
     ' Code removed here...
@@ -278,7 +278,7 @@ itemList = ws.Descendants<Row>().
 
 
 
-```VisualBasic
+```VB.net
 itemList = ws.Descendants(Of Row).
     Where(Function(r) r.Hidden IsNot Nothing AndAlso
           r.Hidden.Value).
@@ -308,7 +308,7 @@ foreach (Column item in cols)
 
 
 
-```VisualBasic
+```VB.net
 Dim cols = ws.Descendants(Of Column).
   Where(Function(c) c.Hidden IsNot Nothing AndAlso
           c.Hidden.Value)
@@ -389,7 +389,7 @@ public static List<uint> GetHiddenRowsOrCols(
 
 
 
-```VisualBasic
+```VB.net
 Public Function GetHiddenRowsOrCols(
   ByVal fileName As String, ByVal sheetName As String,
   ByVal detectRows As Boolean) As List(Of UInteger)
