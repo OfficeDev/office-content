@@ -36,7 +36,7 @@ using System.Text;
 
 
 
-```VisualBasic
+```VB.net
 Imports System
 Imports System.Collections.Generic
 Imports DocumentFormat.OpenXml.Presentation
@@ -84,7 +84,7 @@ using (PresentationDocument presentationDocument = PresentationDocument.Open(pre
 
 
 
-```VisualBasic
+```VB.net
 Using presentationDocument As PresentationDocument = PresentationDocument.Open(presentationFile, False)
     ' Insert other code here.
 End Using
@@ -107,7 +107,7 @@ using (PresentationDocument presentationDocument =
 
 
 
-```VisualBasic
+```VB.net
 Dim stream As Stream = File.Open(strDoc, FileMode.Open)
 Using presentationDocument As PresentationDocument = PresentationDocument.Open(stream, False)
     ' Other code goes here.
@@ -131,7 +131,7 @@ using (PresentationDocument presentationDocument =
 
 
 
-```VisualBasic
+```VB.net
 Dim presentationPackage As Package = Package.Open(filepath, FileMode.Open, FileAccess.Read)
 Using presentationDocument As PresentationDocument = PresentationDocument.Open(presentationPackage)
     ' Other code goes here.
@@ -215,7 +215,7 @@ string relId = (slideIds[index] as SlideId).RelationshipId;
 
 
 
-```VisualBasic
+```VB.net
 ' Get the relationship ID of the first slide.
 Dim part As PresentationPart = ppt.PresentationPart
 Dim slideIds As OpenXmlElementList = part.Presentation.SlideIdList.ChildElements
@@ -247,7 +247,7 @@ sldText = paragraphText.ToString();
 
 
 
-```VisualBasic
+```VB.net
 ' Get the slide part from the relationship ID.
 Dim slide As SlidePart = CType(part.GetPartById(relId), SlidePart)
 
@@ -301,7 +301,7 @@ catch (ArgumentOutOfRangeException exp)
 
 
 
-```VisualBasic
+```VB.net
 Dim file As String = "C:\Users\Public\Documents\Myppt13.pptx"
 Dim slideText As String = Nothing
 Dim index As Integer = 1
@@ -350,7 +350,7 @@ public static void GetSlideIdAndText(out string sldText, string docName, int ind
 
 
 
-```VisualBasic
+```VB.net
 Public Sub GetSlideIdAndText(ByRef sldText As String, ByVal docName As String, ByVal index As Integer)
     Using ppt As PresentationDocument = PresentationDocument.Open(docName, False)
         ' Get the relationship ID of the first slide.
