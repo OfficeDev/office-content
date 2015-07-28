@@ -1,0 +1,43 @@
+
+# TableObject.RowNumbers Property (Excel)
+
+ **Last modified:** March 10, 2013
+
+ **In this article**
+ [Version information](#sectionSection0)
+ [Syntax](#sectionSection1)
+ [Property value](#sectionSection2)
+
+
+Specifies if row numbers are added as the first column of the specified query table.  **Boolean** Read/Write
+
+
+## Version information
+<a name="sectionSection0"> </a>
+
+Version Added: Excel 2013 
+
+
+## Syntax
+<a name="sectionSection1"> </a>
+
+ _expression_. **RowNumbers**
+
+ _expression_A variable that represents a  [TableObject](c853beb6-f2e7-dda0-b33a-8110a6c23de8.md)object.
+
+
+## Property value
+<a name="sectionSection2"> </a>
+
+ **BOOL**
+
+
+## See also
+<a name="sectionSection2"> </a>
+
+
+#### Other resources
+
+
+ [TableObject Object Members](6fbca0ef-b855-d09c-f2ba-579d50f802fb.md)
+ [TableObject Object](c853beb6-f2e7-dda0-b33a-8110a6c23de8.md)

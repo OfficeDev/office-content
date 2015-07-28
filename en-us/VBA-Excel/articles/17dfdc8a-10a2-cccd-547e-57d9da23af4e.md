@@ -1,0 +1,43 @@
+
+# ModelColumnName.ColumnName Property (Excel)
+
+ **Last modified:** March 10, 2013
+
+ **In this article**
+ [Version information](#sectionSection0)
+ [Syntax](#sectionSection1)
+ [Property value](#sectionSection2)
+
+
+ **String** representing the name of a column of the table identified by the [ModelColumnName.TableName Property (Excel)](e6d4237b-ce80-00c1-a67f-794fedb8b05f.md) property. Read-only.
+
+
+## Version information
+<a name="sectionSection0"> </a>
+
+Version Added: Excel 2013 
+
+
+## Syntax
+<a name="sectionSection1"> </a>
+
+ _expression_. **ColumnName**
+
+ _expression_A variable that represents a  [ModelColumnName](63a5eefe-b54d-0075-c116-8a752c881834.md) object.
+
+
+## Property value
+<a name="sectionSection2"> </a>
+
+ **STRING**
+
+
+## See also
+<a name="sectionSection2"> </a>
+
+
+#### Other resources
+
+
+ [ModelColumnName Object Members](b27889a8-4ed3-d060-7e29-83cbd58a6124.md)
+ [ModelColumnName Object](63a5eefe-b54d-0075-c116-8a752c881834.md)
