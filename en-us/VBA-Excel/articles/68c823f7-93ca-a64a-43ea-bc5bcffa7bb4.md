@@ -1,14 +1,9 @@
 
 # Databar.BarColor Property (Excel)
 
- **Last modified:** March 10, 2013
+ **Last modified:** July 27, 2015
 
 Returns a  ** [FormatColor](b7818b27-8790-ef52-c24e-8edbdcf979f2.md)** object that you can use to modify the color of the bars in a data bar conditional format.
-
-## Version Information
-
-Version Added: Excel 2007 
-
 
 ## Syntax
 

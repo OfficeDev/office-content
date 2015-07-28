@@ -1,25 +1,11 @@
 
 # ColorStops.Creator Property (Excel)
 
- **Last modified:** March 10, 2013
-
- **In this article**
- [Version Information](#sectionSection0)
- [Syntax](#sectionSection1)
- [Remarks](#sectionSection2)
-
+ **Last modified:** July 27, 2015
 
 Returns a 32-bit integer that indicates the application in which this object was created. Read-only  **Long**
 
-
-## Version Information
-<a name="sectionSection0"> </a>
-
-Version Added: Excel 2007 
-
-
 ## Syntax
-<a name="sectionSection1"> </a>
 
  _expression_. **Creator**
 
@@ -32,13 +18,11 @@ XlCreator
 
 
 ## Remarks
-<a name="sectionSection2"> </a>
 
 If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C. The Creator property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL. 
 
 
 ## See also
-<a name="sectionSection2"> </a>
 
 
 #### Concepts

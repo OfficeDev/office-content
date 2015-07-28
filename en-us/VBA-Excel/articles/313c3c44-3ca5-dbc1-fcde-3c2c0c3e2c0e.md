@@ -1,14 +1,9 @@
 
 # Databar.PTCondition Property (Excel)
 
- **Last modified:** March 10, 2013
+ **Last modified:** July 27, 2015
 
 Returns a  **Boolean** value indicating if the conditional format is being applied to a PivotTable. Read-only.
-
-## Version Information
-
-Version Added: Excel 2007 
-
 
 ## Syntax
 

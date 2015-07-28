@@ -1,14 +1,9 @@
 
 # WorkbookConnection.Type Property (Excel)
 
- **Last modified:** March 10, 2013
+ **Last modified:** July 27, 2015
 
 Returns the workbook connection type. Read-only  ** [XlConnectionType](d1849087-2cd0-7b96-9d58-840033af0839.md)**.
-
-## Version Information
-
-Version Added: Excel 2007 
-
 
 ## Syntax
 

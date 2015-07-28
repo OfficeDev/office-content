@@ -1,25 +1,11 @@
 
 # ConditionValue.Value Property (Excel)
 
- **Last modified:** March 10, 2013
-
- **In this article**
- [Version Information](#sectionSection0)
- [Syntax](#sectionSection1)
- [Remarks](#sectionSection2)
-
+ **Last modified:** July 27, 2015
 
 Returns or sets the shortest bar or longest bar threshold value for a data bar conditional format. Read/write  **Variant**.
 
-
-## Version Information
-<a name="sectionSection0"> </a>
-
-Version Added: Excel 2007 
-
-
 ## Syntax
-<a name="sectionSection1"> </a>
 
  _expression_. **Value**
 
@@ -27,7 +13,6 @@ Version Added: Excel 2007
 
 
 ## Remarks
-<a name="sectionSection2"> </a>
 
 You can set the value only if the  ** [ConditionValue.Type](20467063-f402-4e7f-42ba-581b61b83a15.md)** property for the conditional format is set to one of the following constants: **xlConditionValueNumber**,  **xlConditionValuePercent**,  **xlConditionValuePercentile**, or  **xlConditionValueFormula**.
 
@@ -35,7 +20,6 @@ If the threshold type is a formula, you can set the formula as a  **String**. Th
 
 
 ## See also
-<a name="sectionSection2"> </a>
 
 
 #### Concepts

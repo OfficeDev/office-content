@@ -1,25 +1,11 @@
 
 # SparklineGroup.ModifyLocation Method (Excel)
 
- **Last modified:** March 09, 2015
-
- **In this article**
- [Version Information](#sectionSection0)
- [Syntax](#sectionSection1)
- [Example](#sectionSection2)
-
+ **Last modified:** July 27, 2015
 
 Sets the associated  ** [Range](8bc4841b-72f7-34b5-a299-3357bf8f457b.md)** object to modify the location of the sparkline group.
 
-
-## Version Information
-<a name="sectionSection0"> </a>
-
-Version Added: Excel 2010 
-
-
 ## Syntax
-<a name="sectionSection1"> </a>
 
  _expression_. **ModifyLocation**( **_Location_**)
 
@@ -40,7 +26,6 @@ Nothing
 
 
 ## Example
-<a name="sectionSection2"> </a>
 
 This example selects a sparkline group in the location A1:A4 and changes the location to equal A10:A14.
 
@@ -52,7 +37,6 @@ ActiveCell.SparklineGroups.Item(1).ModifyLocation Range("$A$10:$A$14")
 
 
 ## See also
-<a name="sectionSection2"> </a>
 
 
 #### Concepts

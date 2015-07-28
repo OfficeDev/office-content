@@ -1,25 +1,11 @@
 
 # AboveAverage.NumberFormat Property (Excel)
 
- **Last modified:** March 10, 2013
-
- **In this article**
- [Version Information](#sectionSection0)
- [Syntax](#sectionSection1)
- [Remarks](#sectionSection2)
-
+ **Last modified:** July 27, 2015
 
 Returns or sets the number format applied to a cell if the conditional formatting rule evaluates to  **True**. Read/write  **Variant**.
 
-
-## Version Information
-<a name="sectionSection0"> </a>
-
-Version Added: Excel 2007 
-
-
 ## Syntax
-<a name="sectionSection1"> </a>
 
  _expression_. **NumberFormat**
 
@@ -27,13 +13,11 @@ Version Added: Excel 2007
 
 
 ## Remarks
-<a name="sectionSection2"> </a>
 
 The number format is specified using the same format codes displayed on the  **Number** tab of the **Format Cells** dialog box. You can use a built-in number format, for example `"General"`, or create a custom number format.
 
 
 ## See also
-<a name="sectionSection2"> </a>
 
 
 #### Concepts

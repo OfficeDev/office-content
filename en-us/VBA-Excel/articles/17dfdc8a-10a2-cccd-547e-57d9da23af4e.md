@@ -1,25 +1,11 @@
 
 # ModelColumnName.ColumnName Property (Excel)
 
- **Last modified:** March 10, 2013
-
- **In this article**
- [Version information](#sectionSection0)
- [Syntax](#sectionSection1)
- [Property value](#sectionSection2)
-
+ **Last modified:** July 27, 2015
 
  **String** representing the name of a column of the table identified by the [ModelColumnName.TableName Property (Excel)](e6d4237b-ce80-00c1-a67f-794fedb8b05f.md) property. Read-only.
 
-
-## Version information
-<a name="sectionSection0"> </a>
-
-Version Added: Excel 2013 
-
-
 ## Syntax
-<a name="sectionSection1"> </a>
 
  _expression_. **ColumnName**
 
@@ -27,13 +13,11 @@ Version Added: Excel 2013
 
 
 ## Property value
-<a name="sectionSection2"> </a>
 
  **STRING**
 
 
 ## See also
-<a name="sectionSection2"> </a>
 
 
 #### Other resources

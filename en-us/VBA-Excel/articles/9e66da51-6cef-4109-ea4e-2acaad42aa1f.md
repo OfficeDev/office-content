@@ -1,7 +1,7 @@
 
 # Range.EntireRow Property (Excel)
 
- **Last modified:** March 10, 2013
+ **Last modified:** July 27, 2015
 
  **In this article**
  [Syntax](#sectionSection0)
@@ -30,7 +30,7 @@ This example sets the value of the first cell in the row that contains the activ
 ActiveCell.EntireRow.Cells(1, 1).Value = 5
 ```
 
- **Sample code provided by:** Holy Macro! Books, [Holy Macro! It's 2,500 Excel VBA Examples](http://www.mrexcel.com/store/index.php?l=product_detail&amp;p=1) | [About the Contributor](9e66da51-6cef-4109-ea4e-2acaad42aa1f.md#AboutContributor)
+ **Sample code provided by:** Holy Macro! Books, [Holy Macro! It's 2,500 Excel VBA Examples](http://www.mrexcel.com/store/index.php?l=product_detail&amp;p=1)
 
 This example sorts all the rows on a worksheet, including hidden rows.
 

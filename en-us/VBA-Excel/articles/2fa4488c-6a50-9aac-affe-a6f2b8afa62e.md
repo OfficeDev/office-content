@@ -1,26 +1,19 @@
 
 # ChartGroup.AxisGroup Property (Excel)
 
- **Last modified:** March 10, 2013
+ **Last modified:** July 27, 2015
 
  **In this article**
- [Version Information](#sectionSection0)
- [Syntax](#sectionSection1)
- [Remarks](#sectionSection2)
- [Example](#sectionSection3)
+ [Syntax](#sectionSection0)
+ [Remarks](#sectionSection1)
+ [Example](#sectionSection2)
 
 
 Returns or sets the group for the specified chart. Read/write
 
 
-## Version Information
-<a name="sectionSection0"> </a>
-
-Version Added: Excel 2010 
-
-
 ## Syntax
-<a name="sectionSection1"> </a>
+<a name="sectionSection0"> </a>
 
  _expression_. **AxisGroup**
 
@@ -33,13 +26,13 @@ Version Added: Excel 2010
 
 
 ## Remarks
-<a name="sectionSection2"> </a>
+<a name="sectionSection1"> </a>
 
 For 3-D charts, only  **xlPrimary** is valid.
 
 
 ## Example
-<a name="sectionSection3"> </a>
+<a name="sectionSection2"> </a>
 
 This example deletes the value axis if it is in the secondary group.
 
@@ -53,7 +46,7 @@ End With
 
 
 ## See also
-<a name="sectionSection3"> </a>
+<a name="sectionSection2"> </a>
 
 
 #### Concepts

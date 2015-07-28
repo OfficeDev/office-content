@@ -1,26 +1,19 @@
 
 # WorkbookConnection.InModel Property (Excel)
 
- **Last modified:** March 10, 2013
+ **Last modified:** July 27, 2015
 
  **In this article**
- [Version information](#sectionSection0)
- [Syntax](#sectionSection1)
- [Remarks](#sectionSection2)
- [Property value](#sectionSection3)
+ [Syntax](#sectionSection0)
+ [Remarks](#sectionSection1)
+ [Property value](#sectionSection2)
 
 
 Specifies whether or not the  [WorkbookConnection Object (Excel)](5974dd57-7671-cd55-3f8f-6a76fa938317.md) has been added to the model. **Boolean** Read-only
 
 
-## Version information
-<a name="sectionSection0"> </a>
-
-Version Added: Excel 2013 
-
-
 ## Syntax
-<a name="sectionSection1"> </a>
+<a name="sectionSection0"> </a>
 
  _expression_. **InModel**
 
@@ -28,19 +21,19 @@ Version Added: Excel 2013
 
 
 ## Remarks
-<a name="sectionSection2"> </a>
+<a name="sectionSection1"> </a>
 
 Must be false for legacy connections.
 
 
 ## Property value
-<a name="sectionSection3"> </a>
+<a name="sectionSection2"> </a>
 
  **BOOL**
 
 
 ## See also
-<a name="sectionSection3"> </a>
+<a name="sectionSection2"> </a>
 
 
 #### Concepts

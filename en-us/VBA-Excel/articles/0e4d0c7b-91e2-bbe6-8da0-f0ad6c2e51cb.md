@@ -1,14 +1,9 @@
 
 # Research.SetLanguagePair Method (Excel)
 
- **Last modified:** March 09, 2015
+ **Last modified:** July 27, 2015
 
 Sets the languages for the translation service.
-
-## Version Information
-
-Version Added: Excel 2007 
-
 
 ## Syntax
 

@@ -1,25 +1,11 @@
 
 # Application.WorkbookAfterSave Event (Excel)
 
- **Last modified:** March 09, 2015
-
- **In this article**
- [Version Information](#sectionSection0)
- [Syntax](#sectionSection1)
- [Example](#sectionSection2)
-
+ **Last modified:** July 27, 2015
 
 Occurs after the workbook is saved.
 
-
-## Version Information
-<a name="sectionSection0"> </a>
-
-Version Added: Excel 2010 
-
-
 ## Syntax
-<a name="sectionSection1"> </a>
 
  _expression_. **WorkbookAfterSave**( **_Wb_**,  **_Success_**)
 
@@ -41,7 +27,6 @@ Nothing
 
 
 ## Example
-<a name="sectionSection2"> </a>
 
 The following code example displays a message box if the workbook was successfully saved. This code must be placed in a class module and an instance of that class must be correctly initialized. For more information about how to use event procedures with the  **Application** object, see [Using Events with the Application Object](0063feba-47fd-29be-d2d5-8fcf47e70cbc.md).
 
@@ -57,7 +42,6 @@ End Sub
 
 
 ## See also
-<a name="sectionSection2"> </a>
 
 
 #### Concepts

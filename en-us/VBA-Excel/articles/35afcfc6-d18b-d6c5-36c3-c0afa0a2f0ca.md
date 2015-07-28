@@ -1,14 +1,9 @@
 
 # ThreeDFormat.BevelBottomInset Property (Excel)
 
- **Last modified:** March 10, 2013
+ **Last modified:** July 27, 2015
 
 Returns or sets a value indicating whether the bottom insert bevel should be raised for a  **ThreeDFormat** object. Read/write **Single**.
-
-## Version Information
-
-Version Added: Excel 2007 
-
 
 ## Syntax
 

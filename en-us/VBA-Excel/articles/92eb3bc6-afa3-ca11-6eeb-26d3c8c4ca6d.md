@@ -1,14 +1,9 @@
 
 # WorksheetFunction.Csc Method (Excel)
 
- **Last modified:** March 09, 2015
+ **Last modified:** July 27, 2015
 
 Returns the cosecant of an angle.
-
-## Version information
-
-Version Added: Excel 2013 
-
 
 ## Syntax
 

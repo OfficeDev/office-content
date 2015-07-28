@@ -1,14 +1,9 @@
 
 # PivotFilter.Delete Method (Excel)
 
- **Last modified:** March 10, 2013
+ **Last modified:** July 27, 2015
 
 Deletes the filter and removes it from the filter collections of the PivotField and the PivotTable.
-
-## Version Information
-
-Version Added: Excel 2007 
-
 
 ## Syntax
 

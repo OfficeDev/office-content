@@ -1,25 +1,11 @@
 
 # TimelineState.FilterType Property (Excel)
 
- **Last modified:** March 10, 2013
-
- **In this article**
- [Version information](#sectionSection0)
- [Syntax](#sectionSection1)
- [Property value](#sectionSection2)
-
+ **Last modified:** July 27, 2015
 
 Returns the type of the date filter.  [XlPivotFilterType Enumeration (Excel)](0ae3f0fe-02e3-b0f7-1506-1961c4adcd6c.md) Read-only
 
-
-## Version information
-<a name="sectionSection0"> </a>
-
-Version Added: Excel 2013 
-
-
 ## Syntax
-<a name="sectionSection1"> </a>
 
  _expression_. **FilterType**
 
@@ -27,13 +13,11 @@ Version Added: Excel 2013
 
 
 ## Property value
-<a name="sectionSection2"> </a>
 
  **XLPIVOTFILTERTYPE**
 
 
 ## See also
-<a name="sectionSection2"> </a>
 
 
 #### Other resources

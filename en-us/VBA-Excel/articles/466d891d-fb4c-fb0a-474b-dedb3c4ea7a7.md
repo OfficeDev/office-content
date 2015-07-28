@@ -1,7 +1,7 @@
 
 # Workbook.Save Method (Excel)
 
- **Last modified:** March 10, 2013
+ **Last modified:** July 27, 2015
 
  **In this article**
  [Syntax](#sectionSection0)
@@ -53,7 +53,7 @@ Next w
 Application.Quit
 ```
 
- **Sample code provided by:** Holy Macro! Books, [Holy Macro! It's 2,500 Excel VBA Examples](http://www.mrexcel.com/store/index.php?l=product_detail&amp;p=1) | [About the Contributor](466d891d-fb4c-fb0a-474b-dedb3c4ea7a7.md#AboutContributor)
+ **Sample code provided by:** Holy Macro! Books, [Holy Macro! It's 2,500 Excel VBA Examples](http://www.mrexcel.com/store/index.php?l=product_detail&amp;p=1)
 
 This example uses the  **BeforeSave** event to verify that certain cells contain data before the workbook can be saved. The workbook cannot be saved until there is data in each of the following cells: D5, D7, D9, D11, D13, and D15.
 

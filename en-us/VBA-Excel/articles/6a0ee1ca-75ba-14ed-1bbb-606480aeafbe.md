@@ -1,25 +1,11 @@
 
 # AddIns2.Item Property (Excel)
 
- **Last modified:** March 09, 2015
-
- **In this article**
- [Version Information](#sectionSection0)
- [Syntax](#sectionSection1)
- [Example](#sectionSection3)
-
+ **Last modified:** July 27, 2015
 
 Returns a single object from a collection.
 
-
-## Version Information
-<a name="sectionSection0"> </a>
-
-Version Added: Excel 2010 
-
-
 ## Syntax
-<a name="sectionSection1"> </a>
 
  _expression_. **Item**( **_Index_**)
 
@@ -35,7 +21,6 @@ Version Added: Excel 2010
 |Index|Required| **Variant**|The name or index number of the object.|
 
 ## Example
-<a name="sectionSection3"> </a>
 
 This example displays the status of the Analysis ToolPak add-in. Note that the string used as the index to the  **AddIns2** method is the **Title** property of the **AddIn** object.
 
@@ -50,7 +35,6 @@ End If
 
 
 ## See also
-<a name="sectionSection3"> </a>
 
 
 #### Concepts

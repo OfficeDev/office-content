@@ -1,26 +1,19 @@
 
 # ModelChanges.Source Property (Excel)
 
- **Last modified:** May 31, 2013
+ **Last modified:** July 27, 2015
 
  **In this article**
- [Version information](#sectionSection0)
- [Syntax](#sectionSection1)
- [Remarks](#sectionSection2)
- [Property value](#sectionSection3)
+ [Syntax](#sectionSection0)
+ [Remarks](#sectionSection1)
+ [Property value](#sectionSection2)
 
 
 Returns the source of the data model. Read-only. 
 
 
-## Version information
-<a name="sectionSection0"> </a>
-
-Version Added: Excel 2013 
-
-
 ## Syntax
-<a name="sectionSection1"> </a>
+<a name="sectionSection0"> </a>
 
  _expression_. **Source**
 
@@ -28,19 +21,19 @@ Version Added: Excel 2013
 
 
 ## Remarks
-<a name="sectionSection2"> </a>
+<a name="sectionSection1"> </a>
 
 The source can be either Excel or a PowerPivot Add-in.
 
 
 ## Property value
-<a name="sectionSection3"> </a>
+<a name="sectionSection2"> </a>
 
  **XlModelChangeSource**
 
 
 ## See also
-<a name="sectionSection3"> </a>
+<a name="sectionSection2"> </a>
 
 
 #### Other resources
