@@ -6,5 +6,5 @@ Welcome to the new Office  Javascript API! We hope you enjoy it and find it usef
 
 ## Libraries
 
-* [Word](Word/Reference/README.md): Word Lirbary
+* [Word](Word/Reference/README.md): Word Library
 * Excel: Excel Lirbary
