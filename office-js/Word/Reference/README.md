@@ -1,17 +1,24 @@
-# Word JavaScript APIs
-Welcome to the new Word Javascript API! We hope you enjoy it and find it useful. Please open [issues](https://github.com/JuaneloJuanelo/WordAPI2/issues) if you find errors in the documentation or if you have suggested content or examples that we should add to this documentation. We're open to community contributions if you early adopters have found some useful information.
+# Word JavaScript APIs (Preview)
 
-[Get started with build 4429.1005](#getstarted)
+Welcome to the Word JavaScript API (Preview) documentation. Here you can find everything you need to create the next generation of Word add-ins in Office 2016 Preview for Windows. The new APIs provide a variety of Word-specific functionality related to documents, paragraphs, content controls and other common Word objects. This API compliments the functionality of our existing Office.js library. 
 
-## Release Notes for build 4229.1005
+## Try it out
 
-Removed the Html and Ooxml properties. Added the getHtml and getOoxml properties.
+We have been working on a Snippet Explorer (Preview) to let you browse through common code snippets and learn how the new APIs work. Give it a try. The code snippets referenced by the explorer are available [here](https://github.com/robmhoward/robmhoward.github.io/tree/master/word/samples). 
 
-Added search to the paragraph object.
+You can also [get started with build 4429.1005](#getstarted).
 
-Added insertBreak to the range object.
+## Give feedback
 
-## Main Objects  
+We've released this preview to give developers an early look at the direction we're heading with the Office developer platform.
+
+* Check out the docs  and let us know about any [issues](https://github.com/OfficeDev/office-js-docs/issues) you find in it by submitting issues directly in this repo.
+* Share your code snippets by submitting a pull request to Snippet Explorer repo.
+* Let us know what you think about the APIs and the general programming experience. 
+
+## API overview  
+
+Below links provides the main level Word objects and APIs.
 
 * [Document](resources/document.md): The Document object is the top level object. A Document object contains one or more 
 [sections](resources/section.md), a body that contains the content of the document, and header/footer information.
@@ -257,4 +264,10 @@ Use these steps to get you started with WordJS. Please open an issue if you enco
 The code for this sample is found in this [sample library](https://github.com/trmini/robmhoward.github.io/tree/Word-APIs/word/samples/4229.1005). A great feature of this sample is that you can alter and run the code from within the sample. Contributions to this sample library are encouraged. Please provide feedback on this API, the experience of using it, blocking issues, and the documentation. Your input is appreciated! 
 
 
+## Release Notes for build 4229.1005
 
+Removed the Html and Ooxml properties. Added the getHtml and getOoxml properties.
+
+Added search to the paragraph object.
+
+Added insertBreak to the range object.
