@@ -1,10 +1,10 @@
 # Word JavaScript APIs (Preview)
 
-Welcome to the Word JavaScript API (Preview) documentation. Here you can find everything you need to create the next generation of Word add-ins in Office 2016 Preview for Windows. The new APIs provide a variety of Word-specific functionality related to documents, paragraphs, content controls and other common Word objects. This API compliments the functionality of our existing Office.js library. 
+Welcome to the Word JavaScript API (Preview) documentation. Here you can find everything you need to create the next generation of Word add-ins in Office 2016 Preview for Windows. The new APIs provide a variety of Word-specific functionality related to documents, paragraphs, content controls, and other common Word objects. This API complements the functionality of our existing Office.js library. 
 
 ## Try it out
 
-We have been working on a Snippet Explorer (Preview) to let you browse through common code snippets and learn how the new APIs work. Give it a try. The code snippets referenced by the Snippet Explorer are available [here](https://github.com/robmhoward/robmhoward.github.io/tree/master/word/samples). 
+We've working on a Snippet Explorer (Preview) to let you browse through common code snippets and learn how the new APIs work. Give it a try. The code snippets referenced by the Snippet Explorer are available [here](https://github.com/robmhoward/robmhoward.github.io/tree/master/word/samples). 
 
 You can also [get started with build 4429.1005](#getstarted).
 
@@ -12,17 +12,17 @@ You can also [get started with build 4429.1005](#getstarted).
 
 We've released this preview to give developers an early look at the direction we're heading with the Office developer platform.
 
-* Check out the docs  and let us know about any [issues](https://github.com/OfficeDev/office-js-docs/issues) you find in it by submitting issues directly in this repo.
+* Check out the docs and let us know about any [issues](https://github.com/OfficeDev/office-js-docs/issues) you find in those docs by submitting issues directly in this repo.
 * Share your code snippets by submitting a pull request to the Snippet Explorer repo.
 * Let us know what you think about the APIs and the general programming experience. 
 
 ## API overview  
 
-Below links provides the main level Word objects and APIs.
+Below links provide the main-level Word objects and APIs.
 
-* [Document](resources/document.md): The Document object is the top level object. A Document object contains one or more 
+* [Document](resources/document.md): The Document object is the top-level object. A Document object contains one or more 
 [sections](resources/section.md), a body that contains the content of the document, and header/footer information.
-* [Paragraph](resources/paragraph.md): A Paragraph object represents a single paragraph in a selection, range or document. 
+* [Paragraph](resources/paragraph.md): A Paragraph object represents a single paragraph in a selection, range, or document. 
 You can access a paragraph through the paragraphs collection in a selection, range, or document. 
 * [ContentControl](resources/contentControl.md): A ContentControl object is a container for content. It is a bound and
  potentially labeled region in a document that serves as a container for specific types of content. For example, content 
@@ -57,7 +57,7 @@ Here's how you get the request context:
 ```
 
 You can now create a queue of commands that will target the contents of a Word document.  For example, let's create a set of commands that will get the current selection and add some text to the selection. The selection will be contained in a [range](resources/range.md) object returned by document.getSelection(). We are going to add some text at
-the end of the selection. We'll use the context you saw in the previous line of code.
+the end of the selection. We’ll use the context given in the previous line of code.
 
 ```javascript
     var range = ctx.document.getSelection();
@@ -101,20 +101,20 @@ The load method specifies which collections, objects, and properties will be loa
     object.load(options);
 ```    
         
-`object` identifies the object which will be loaded into the object model.
+`object` identifies the object that will be loaded into the object model.
 
 `options` identifies which properties are loaded and the paging arguments. Properties to load can be specified as either a string, a string of comma-separated values, an array of strings, or in a [loadOption object](#loadOption-object). 
 
-Note -- You can use multiple load statements that will be dispatched in a single executeAsync call. Do this instead of creating complicated `select` and `expand` statements.
+Note -- You can use multiple load statements that will be dispatched in a single executeAsync() call. Do this instead of creating complicated `select` and `expand` statements.
 
-For example, we'll use the context you saw in the previous code to load the *text* content of all of the paragraphs contained in the current selection which was captured in the range object.
+For example, we'll use the context given in the previous code to load the *text* content of all of the paragraphs contained in the current selection that was captured in the range object.
 
 ```javascript
     ctx.load(range.paragraphs, 'text');
 ```
 
 Here is key information for using the load method:
-+ You SHOULD specify the property set you want to load for the object in the options parameter. Not including the options parameter is the equivalent of using a "SELECT * from Table1" which will affect performance and SHOULD NOT be done for production applications.
++ You SHOULD specify the property set you want to load for the object in the options parameter. Not including the options parameter is the equivalent of using a "SELECT * from Table1", which will affect performance and SHOULD NOT be done for production applications.
 + If the loaded object is a collection, then the specified properties will be loaded for all objects in the collection.
 
 ##### loadOption object
@@ -165,7 +165,7 @@ You use the expand option to load properties that are in nested Word API objects
                      expand: 'font, paragraphs'});
 ```
 
-Notice how we specify a path to the selected properties in the select statement. The select statement can be used to not only specify the properties on the loaded object, but also be used to specify the properties loaded on the child objects identified by the expand option. We would have gotten all of the properties for the font object and paragraphs collection if we hadn't added the select statement. It is a best practice to always use the select statement with the expand statement.
+Notice how we specify a path to the selected properties in the select statement. The select statement can be used not only to specify the properties on the loaded object, but also to specify the properties loaded on the child objects identified by the expand option. We would have gotten all the properties for the font object and paragraphs collection if we hadn't added the select statement. It is a best practice to always use the select statement with the expand statement.
 
 Use multiple load method calls if you find that your loadOption objects are getting too complex. 
 
@@ -173,22 +173,22 @@ Use multiple load method calls if you find that your loadOption objects are gett
 
 So far, you specified the objects and properties that you want to load. While that will load the objects into the object model, you still need a handle to make changes to those objects. That is where the references property comes in. The references property gets an identifier for an object so that you can write back to the object. This happens because a reference to that object is persisted in memory. You **MUST** always remove that reference when you are done with the object. 
 
-For example, if you want to use the range object after the executeAsync call, you'll need to specify that you want a reference to it. Here's how you add a reference to the queue:
+For example, if you want to use the range object after the executeAsync() call, you'll need to specify that you want a reference to it. Here's how you add a reference to the queue:
 
 ```javascript
     ctx.references.add(range);
 ```
 
-Now, once you have added a reference and have acted upon the object, and you have no more use for the object, you **MUST** remove the reference. You'll queue up the remove reference call before a code path that runs `ctx.executeAsync()`. You add the remove reference call to the queue in one of two ways: 
+After you've added a reference and acted upon the object, and after you have no more use for the object, you **MUST** remove the reference. You'll queue up the remove reference call before a code path that runs `ctx.executeAsync()`. You add the remove reference call to the queue in one of two ways: 
 
 ```javascript
     ctx.references.removeAll(); // removes all object references declared on this request context
-    ctx.references.remove(object); // removes a single object reference where 'object' is he object passed into references.add()
+    ctx.references.remove(object); // removes a single object reference where 'object' is the object passed into references.add()
 ```
 
 #### Pulling it all together
 
-Let's put it all together by taking a look at a simple example that shows how you can use the client request context, load method, references, and the executeAsync method.
+Let's put it all together by taking a look at a simple example that shows how you can use the client request context, load method, references, and the executeAsync() method.
 
 **Example: How to load the font color and paragraph text for all fonts and paragraphs in a range** 
 
@@ -256,7 +256,7 @@ Use these steps to get you started with WordJS. Please open an issue if you enco
 2. Put [Word16SampleRegKey.reg](/resources/sampleFiles/Word16SampleRegKey.reg) and [WordAPIs.xml](/resources/sampleFiles/WordAPIs.xml) in the c:\temp directory. Modify the registry file if you place these files in a different directory. The registry key tells Word where it can find WordAPIs.xml. WordAPIs.xml is the manifest file that declares th functionality and the location of the add-in web application.
 3. Close all Word, Excel, PowerPoint, and Outlook sessions.
 4. Start Word.
-5. Select the *Insert* tab, and then the *My Add-ins* drop down box. Select the *Word APIs (4229-1005)* add-in. This will load the add-in.
+5. Select the *Insert* tab, and then select the *My Add-ins* drop-down box. Select the *Word APIs (4229-1005)* add-in. This will load the add-in.
 ![Select the add-in from the Insert tab](/resources/images/insertAddIn.png)
 6. Select the target build (in red), and the target object and sample (in green). ![Select the sample to run](/resources/images/chooseSample.png)
 7. Select *Run!* to see the results of running the sample.
@@ -266,7 +266,7 @@ The code for this sample is found in this [sample library](https://github.com/tr
 
 ## Release Notes for build 4229.1005
 
-Removed the Html and Ooxml properties. Added the getHtml and getOoxml properties.
+Removed the 'html' and 'ooxml' properties. Added the getHtml() and getOoxml() methods.
 
 Added search to the paragraph object.
 
