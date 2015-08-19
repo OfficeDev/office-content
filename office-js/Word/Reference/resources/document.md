@@ -46,7 +46,7 @@ None
 
 #### Returns
 
-void
+[Range](range.md)
 
 [Back](#methods)
 
