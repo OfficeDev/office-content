@@ -24,7 +24,7 @@ sections, content controls, and the body that contains the contents of the docum
 
 | Method     | Return Type    |Description|Notes  |
 |:-----------------|:--------|:----------|:------|
-|[getSelection()](#getselection)| [Range](range.md) |Gets the current selection of the document. Multiple selections are not supported. |
+|[getSelection()](#getselection())| [Range](range.md) |Gets the current selection of the document. Multiple selections are not supported. |
 |[load(param: option)](#loadparam-option)| Document | Fills the document proxy object created in the JavaScript layer with property and object values specified in the parameter.  |
 |[save()](#save)| void | Saves the document. This will use the Word default file naming convention if the document has not been saved before. |     
 

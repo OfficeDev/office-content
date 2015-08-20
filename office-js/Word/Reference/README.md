@@ -33,8 +33,7 @@ different page layout configurations of a document. You can access sections from
 * [Range](resources/range.md): A Range object represents a contiguous area in a document. You get a Range object when you
  get a selection, insert content into the body, insert content into a content control, insert content into a paragraph, 
  or get a search result. You can define and manipulate a range without changing the selection.
-* [Selection](resources/selection.md): The Selection object represents the user's selection in the document, or the 
- current insertion point.
+* [Selection](resources/document.md#getselection): Through the document object developers can gave access to the user's selection in the document, or the current insertion point, if nothing is selected.
 * [Picture](resources/inlinePicture.md): A Picture object represents an inline image. You can access the inline picture
  collection of the body, content control, paragraph objects.
 * [Font](resources/font.md): The Font object provides text formatting to a body, content control, paragraph, or range.
