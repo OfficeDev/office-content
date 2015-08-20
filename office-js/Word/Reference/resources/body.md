@@ -36,7 +36,7 @@ Represents the body of a document or a section.
 |[insertParagraph(paragraphText: string, insertLocation: string)](#insertparagraphparagraphtext-string-insertlocation-string)| [Paragraph](paragraph.md)  |Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'. | 
 |[load(param: option)](#loadparam-option)|void|Fills the body proxy object created in the JavaScript layer with property and object values specified in the parameter.|
 |[search(searchText: string, searchOptions: searchOptions)](#searchsearchtext-string-searchoptions-searchoptions)| [searchResultCollection](searchResultCollection.md) |Performs a search with the specified searchOptions on the scope of the body object. The search results are a collection of range objects. | 
-|[select()](#select)| void |Selects and navigates the Word UI to the paragraph. |
+|[select()](#select)| [Range](range.md) |Selects the entire body of the document |
 
 ## API Specification
 
@@ -520,7 +520,7 @@ Parameter      | Type   | Description|
 
 ### select()
 
-Selects the body. This causes Word to scroll to the selection. 
+Selects the body.  
 
 #### Syntax
 ```js
