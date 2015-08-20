@@ -51,7 +51,7 @@ Represents a content control. Content controls are bounded and potentially label
 |[insertOoxml(ooxml: string, insertLocation: string)](#insertooxmlooxml-string-insertlocation-string)| [Range](range.md)  |Inserts OOXML into the content control at the specified location.  The insertLocation value can be 'Replace', 'Start' or 'End'. | 
 |[load(param: option)](#loadparam-option)|void|Fills the content control proxy object created in the JavaScript layer with property and object values specified in the parameter.|
 |[search(searchText : string, searchOptions: searchOptions)](#searchsearchtext-string-searchoptions-searchoptions)| [searchResultCollection](searchResultCollection.md) |Performs a search with the specified searchOptions on the scope of the content control object. The search results are a collection of range objects. | 
-|[select()](#select)| void |Selects the content control. This causes Word to scroll to the selection.  | 
+|[select()](#select())|  [Range](range.md) |Selects the content control. This causes Word to scroll to calling object.  | 
   
 ## API Specification
 
@@ -304,3 +304,52 @@ Performs a search with the specified search options on the scope of the content 
 [Back](#methods)
 
 
+### select()
+
+Selects the content control content.  
+
+
+
+#### Parameters
+
+None
+
+#### Returns
+
+ [Range](range.md)
+
+#### Examples
+
+```js
+    //Search and selects the first occurrence
+
+    var ctx = new Word.RequestContext();
+    var options = Word.SearchOptions.newObject(ctx);
+
+    options.matchCase = false
+
+    var results = ctx.document.body.search("Video", options);
+    ctx.load(results, {select:"text, font/color", expand:"font"});
+    ctx.references.add(results);
+
+    ctx.executeAsync().then(
+      function () {
+        console.log("Found count: " + results.items.length + " " + results.items[0].font.color );
+        for (var i = 0; i < results.items.length; i++) {
+          results.items[i].font.color = "#FF0000"    // Change color to Red
+          results.items[i].font.highlightColor = "#FFFF00";
+          results.items[i].font.bold = true;
+          if (i == 0)
+            results.items[i].select();
+        }
+        ctx.references.remove(results);
+        ctx.executeAsync().then(
+          function () {
+            console.log("Deleted");
+          }
+        );
+      }
+    );
+
+```
+[Back](#methods)

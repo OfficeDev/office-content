@@ -48,7 +48,7 @@ Represents a single paragraph in a selection, range, document, or document body.
 |[insertText(text: string, insertLocation: string)](#inserttexttext-string-insertlocation-string)| [Range](range.md) | Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'. | 
 |[load(param: option)](#loadparam-option)|void|Fills the paragraph proxy object created in the JavaScript layer with property and object values specified in the parameter.|
 |[search(searchText: string, searchOptions: searchOptions)](#searchsearchtext-string-searchoptions-searchoptions)| [searchResultCollection](searchResultCollection.md) |Performs a search with the specified searchOptions on the scope of the paragraph object. The search results are a collection of range objects. | 
-|[select()](#select)| void  | Selects and navigates the Word UI to the paragraph. |
+|[select()](#select)|  [Range](range.md)   | Selects and navigates the Word UI to the paragraph. |
 
 ## API Specification
 
@@ -364,7 +364,7 @@ None
 
 #### Returns
 
-void
+ [Range](range.md) 
 
 
 [Back](#methods)

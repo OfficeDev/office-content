@@ -37,7 +37,7 @@ Represents a contiguous area in a document.
 |[insertText(text: string, insertLocation: string)](#inserttexttext-string-insertlocation-string)| [Range](range.md) | Inserts text into the range at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'. | 
 |[load(param: option)](#loadparam-option)|void|Fills the range proxy object created in the JavaScript layer with property and object values specified in the parameter.|
 |[search(searchText: string, searchOptions: searchOptions)](#searchsearchtext-string-searchoptions-searchoptions)| [searchResultCollection](searchResultCollection.md) |Performs a search with the specified searchOptions on the scope of the range object. The search results are a collection of range objects. | 
-|[select()](#select)| void  | Selects and navigates the Word UI to the range. |
+|[select()](#select)| [Range](range.md)  | Selects and navigates the Word UI to the range. |
 
 
 ## API Specification
@@ -380,7 +380,7 @@ None
 
 #### Returns
 
-void
+[Range](range.md)
 
 
 [Back](#methods)

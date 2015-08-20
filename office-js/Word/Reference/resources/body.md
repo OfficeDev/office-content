@@ -532,8 +532,7 @@ None
 
 #### Returns
 
-void
-
+ [Range](range.md)
 
 #### Examples
 
