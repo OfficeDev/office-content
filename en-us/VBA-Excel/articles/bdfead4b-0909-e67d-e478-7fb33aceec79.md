@@ -3,10 +3,6 @@
 
  **Last modified:** July 28, 2015
 
- **In this article**
- [Using the Select Method and the Selection Property](#sectionSection0)
- [Selecting Cells on the Active Worksheet](#sectionSection1)
- [Activating a Cell Within a Selection](#sectionSection2)
 
 
 In Microsoft Excel, you usually select a cell or cells and then perform an action, such as formatting the cells or entering values in them. In Visual Basic, it is usually not necessary to select cells before modifying them.
