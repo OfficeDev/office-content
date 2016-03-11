@@ -26,7 +26,7 @@ For this, you'll create an iOS project and use CocoaPods to add dependencies to 
 
 ###Create the SimpleMailApp project
 1.	Open Xcode
-2.	Choose **File > New > New**.
+2.	Choose **File > New > Project**.
 3.	Select the **Single View Application** template in the **iOS** project templates and click **Next**.
 4.	Specify **SimpleMailApp** for the **Product Name**, select **Objective-C** for **Language**, **Universal** for **Devices**, a value for **Organization Identifier**, and then click **Next**.
 5.	Select the location for your project, specify whether it should be under version control, and then click **Create**.
