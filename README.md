@@ -18,19 +18,19 @@ The content in the office-content repository is grouped first by article languag
 
 Article within each topic are named by MSDN GUID rather than title name. This is a side effect of our document management process and cannot be changed at this time. We highly recommend using the table of contents within each topic directory (see links below) to navigate to the files you wish to view or edit.
 
-##Articles in this repository
-###Open XML
+## Articles in this repository
+### Open XML
 
 - [Open XML Conceptual Content \[en-us\]](https://github.com/OfficeDev/office-content/tree/master/en-us/OpenXMLCon)
 
-##Before we can accept your pull request
+## Before we can accept your pull request
 
-###Minor corrections
+### Minor corrections
 
 Minor corrections or clarifications you submit for documentation and code examples in this repository do not require a Contribution License Agreement (CLA). Submissions are taken in the form of pull requests. We will do our best to review pull requests within ten business days.
 
 
-###Larger submissions
+### Larger submissions
 
 If you submit new or significant changes to documentation and code examples, you need to send a signed Contribution License Agreement (CLA) before we can accept your pull request if you are in one of these groups:
 
